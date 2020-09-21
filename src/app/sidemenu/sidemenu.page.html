@@ -1,0 +1,13 @@
+ <ion-header>
+    <ion-toolbar>
+      <!-- {{width<480}} -->
+      <ion-button slot="start" *ngIf="width < 480" onchange="onResize($event)">
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+      <ion-title>Side menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    
+  </ion-content>
