@@ -1,17 +1,18 @@
+<ion-nav [root]="rootPage" #content></ion-nav>
 <ion-app>
     <ion-menu side="start" menuId="first" contentId="main-content">
         <ion-header>
             <ion-toolbar>
               <ion-menu-button></ion-menu-button>
-              <ion-title>sidemenu</ion-title>
+              <ion-title>Menu</ion-title>
             </ion-toolbar>
           </ion-header>
           
           <ion-content>
             <ion-list>
               <ion-menu-toggle>
-                  <ion-item>Home</ion-item>
-                  <ion-item>List</ion-item>
+                  <ion-item routerLink="/page">Page</ion-item>
+                  <ion-item routerLink="/">Tabs</ion-item>
               </ion-menu-toggle>
             </ion-list>
           </ion-content>
