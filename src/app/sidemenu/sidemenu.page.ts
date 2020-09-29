@@ -17,10 +17,7 @@ export class SidemenuPage implements OnInit {
           console.log(platform.width());
           this.menuController.open();
         } else {
-          // if(this.menuController.isOpen()) {
             this.menuController.close();
-          // }
-          // location.reload();
         }
       }, 1000);
     });
@@ -30,9 +27,4 @@ export class SidemenuPage implements OnInit {
     
   }
   public width = this.platform.width();
-
-  onResize(event) {
-    console.log(event);
-    console.log("cds",this.platform);
-  }
 }
